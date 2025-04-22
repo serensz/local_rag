@@ -11,5 +11,4 @@ def store_embed(docs):
         connection=db,
         table_name="docs"
     )
-    
     return vectorstore

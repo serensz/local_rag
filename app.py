@@ -7,9 +7,10 @@ def main():
     vectorstore = store_embed(docs)
     chain = build_chain(vectorstore)
 
-    query = input("Enter the question: ")
-    response = chain.invoke({"question": query})
-    print(response)
+    while True:
+        query = input("Enter the question: ")
+        response = chain.invoke({"question": query})
+        print(response)
 
 if __name__ == '__main__':
     main()
