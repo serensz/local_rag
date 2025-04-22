@@ -1,0 +1,10 @@
+openai
+langchain
+lancedb
+torch
+transformers
+chromadb
+nomic
+faiss-cpu
+llama-index
+sentence-transformers
