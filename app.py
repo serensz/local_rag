@@ -1,11 +1,9 @@
-from docloader import load_docs
-from store import store_embed
+from store import store_all_pdfs_in_docs
 from rag_chain import build_chain
 
 def main():
-    docs = load_docs("./docs/cs_psu.pdf")
-    vectorstore = store_embed(docs)
-    chain = build_chain(vectorstore)
+    vectorstore = store_all_pdfs_in_docs()
+    chain = build_chain()
 
     while True:
         query = input("Enter the question: ")
